@@ -25,11 +25,11 @@ class adViewController: UIViewController, GADBannerViewDelegate {
             
             //Request.testDevices = [kGADSimulatorID] //admob 실험
             bannerView.delegate = self
-            bannerView.adUnitID = "ca-app-pub-7948714882446188/2641974550"
+            bannerView.adUnitID = "place your baaner uint ID"
             bannerView.rootViewController = self
             bannerView.loadRequest(Request)
             
-            interstition = GADInterstitial(adUnitID: "ca-app-pub-7948714882446188/6755946557")
+            interstition = GADInterstitial(adUnitID: "place your Interstition unit id")
            Request.testDevices = [kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
             interstition.loadRequest(Request)
             
@@ -53,7 +53,7 @@ class adViewController: UIViewController, GADBannerViewDelegate {
     }
     
     func CreteAD() -> GADInterstitial {
-        let interstition = GADInterstitial(adUnitID: "ca-app-pub-7948714882446188/6755946557")
+        let interstition = GADInterstitial(adUnitID: "place your Interstition unit id")
         interstition.loadRequest(GADRequest())
         return interstition
     }
