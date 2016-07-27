@@ -53,14 +53,11 @@ class ViewController: UIViewController, GADBannerViewDelegate, GMSMapViewDelegat
         
         Request.testDevices = [kGADSimulatorID]
         bannerView.delegate = self
-        bannerView.adUnitID = "ca-app-pub-7948714882446188/2641974550"
+        bannerView.adUnitID = "place your banner unit id"
         //bannerView.rootViewController = self
         bannerView.loadRequest(Request)
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        //AIzaSyAqxqTMWji29emNZ3OA3IZU4QEcqq9Id00
-        
-        GMSServices.provideAPIKey("AIzaSyAqxqTMWji29emNZ3OA3IZU4QEcqq9Id00")
+    
+        GMSServices.provideAPIKey("place your google map sdk api key")
         let camera = GMSCameraPosition.cameraWithLatitude(37.551549, longitude: 126.940774, zoom: 15)
         mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
        // mapView.myLocationEnabled = true
